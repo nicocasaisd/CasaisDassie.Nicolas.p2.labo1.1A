@@ -1,0 +1,159 @@
+# depslib dependency file v1.0
+1656455409 source:/home/nicocasaisd/Documentos/UTN/Programacion1/Parciales/Modelos/Laboratorio-P2-movies/movies/aleatorio.c
+	<math.h>
+	<stdio.h>
+	<stdlib.h>
+	"aleatorio.h"
+
+1656423985 /home/nicocasaisd/Documentos/UTN/Programacion1/Parciales/Modelos/Laboratorio-P2-movies/movies/aleatorio.h
+
+1656454625 source:/home/nicocasaisd/Documentos/UTN/Programacion1/Parciales/Modelos/Laboratorio-P2-movies/movies/LinkedList.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"LinkedList.h"
+	"eMovie.h"
+
+1656438269 /home/nicocasaisd/Documentos/UTN/Programacion1/Parciales/Modelos/Laboratorio-P2-movies/movies/LinkedList.h
+
+1656457714 source:/home/nicocasaisd/Documentos/UTN/Programacion1/Parciales/Modelos/Laboratorio-P2-movies/movies/main.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	"aleatorio.h"
+	"LinkedList.h"
+	"eMovie.h"
+	"parser.h"
+	"controller.h"
+	"menu.h"
+	"utn.h"
+
+1656456735 source:/home/nicocasaisd/Documentos/UTN/Programacion1/Parciales/Modelos/Laboratorio-P2-movies/movies/eMovie.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"eMovie.h"
+	"utn.h"
+	"aleatorio.h"
+
+1656456845 /home/nicocasaisd/Documentos/UTN/Programacion1/Parciales/Modelos/Laboratorio-P2-movies/movies/eMovie.h
+
+1656436510 source:/home/nicocasaisd/Documentos/UTN/Programacion1/Parciales/Modelos/Laboratorio-P2-movies/movies/menu.c
+	<stdio.h>
+	<stdio_ext.h>
+	<stdlib.h>
+	<string.h>
+	"utn.h"
+	"menu.h"
+	"eMovie.h"
+
+1656433065 /home/nicocasaisd/Documentos/UTN/Programacion1/Parciales/Modelos/Laboratorio-P2-movies/movies/utn.h
+
+1654888759 /home/nicocasaisd/Documentos/UTN/Programacion1/Parciales/Modelos/Laboratorio-P2-movies/movies/menu.h
+
+1656457018 source:/home/nicocasaisd/Documentos/UTN/Programacion1/Parciales/Modelos/Laboratorio-P2-movies/movies/utn.c
+	<stdio_ext.h>
+	<string.h>
+	<stdlib.h>
+	"utn.h"
+
+1656434216 source:/home/nicocasaisd/Documentos/UTN/Programacion1/Parciales/Modelos/Laboratorio-P2-movies/movies/parser.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"LinkedList.h"
+	"eMovie.h"
+
+1656457634 source:/home/nicocasaisd/Documentos/UTN/Programacion1/Parciales/Modelos/Laboratorio-P2-movies/movies/controller.c
+	<stdio.h>
+	<stdlib.h>
+	"LinkedList.h"
+	"eMovie.h"
+	"parser.h"
+	"menu.h"
+	"utn.h"
+	"controller.h"
+
+1656429880 /home/nicocasaisd/Documentos/UTN/Programacion1/Parciales/Modelos/Laboratorio-P2-movies/movies/parser.h
+
+1656448740 /home/nicocasaisd/Documentos/UTN/Programacion1/Parciales/Modelos/Laboratorio-P2-movies/movies/controller.h
+
+1656502707 source:/home/nicocasaisd/Documentos/UTN/Programacion1/Parciales/PREVIO Parcial 2/movies/aleatorio.c
+	<math.h>
+	<stdio.h>
+	<stdlib.h>
+	"aleatorio.h"
+
+1656423985 /home/nicocasaisd/Documentos/UTN/Programacion1/Parciales/PREVIO Parcial 2/movies/aleatorio.h
+
+1656511313 source:/home/nicocasaisd/Documentos/UTN/Programacion1/Parciales/PREVIO Parcial 2/movies/controller.c
+	<stdio.h>
+	<stdlib.h>
+	"LinkedList.h"
+	"eMovie.h"
+	"parser.h"
+	"menu.h"
+	"utn.h"
+	"controller.h"
+
+1656438269 /home/nicocasaisd/Documentos/UTN/Programacion1/Parciales/PREVIO Parcial 2/movies/LinkedList.h
+
+1656510385 /home/nicocasaisd/Documentos/UTN/Programacion1/Parciales/PREVIO Parcial 2/movies/eMovie.h
+
+1656429880 /home/nicocasaisd/Documentos/UTN/Programacion1/Parciales/PREVIO Parcial 2/movies/parser.h
+
+1656509970 /home/nicocasaisd/Documentos/UTN/Programacion1/Parciales/PREVIO Parcial 2/movies/menu.h
+
+1656433065 /home/nicocasaisd/Documentos/UTN/Programacion1/Parciales/PREVIO Parcial 2/movies/utn.h
+
+1656508096 /home/nicocasaisd/Documentos/UTN/Programacion1/Parciales/PREVIO Parcial 2/movies/controller.h
+
+1656509749 source:/home/nicocasaisd/Documentos/UTN/Programacion1/Parciales/PREVIO Parcial 2/movies/eMovie.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"eMovie.h"
+	"utn.h"
+	"aleatorio.h"
+
+1656503668 source:/home/nicocasaisd/Documentos/UTN/Programacion1/Parciales/PREVIO Parcial 2/movies/LinkedList.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"LinkedList.h"
+	"eMovie.h"
+
+1656511140 source:/home/nicocasaisd/Documentos/UTN/Programacion1/Parciales/PREVIO Parcial 2/movies/menu.c
+	<stdio.h>
+	<stdio_ext.h>
+	<stdlib.h>
+	<string.h>
+	"utn.h"
+	"menu.h"
+	"eMovie.h"
+
+1656506822 source:/home/nicocasaisd/Documentos/UTN/Programacion1/Parciales/PREVIO Parcial 2/movies/parser.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"LinkedList.h"
+	"eMovie.h"
+
+1656503605 source:/home/nicocasaisd/Documentos/UTN/Programacion1/Parciales/PREVIO Parcial 2/movies/utn.c
+	<stdio_ext.h>
+	<string.h>
+	<stdlib.h>
+	"utn.h"
+
+1656510985 source:/home/nicocasaisd/Documentos/UTN/Programacion1/Parciales/PREVIO Parcial 2/movies/main.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	"aleatorio.h"
+	"LinkedList.h"
+	"eMovie.h"
+	"parser.h"
+	"controller.h"
+	"menu.h"
+	"utn.h"
+
