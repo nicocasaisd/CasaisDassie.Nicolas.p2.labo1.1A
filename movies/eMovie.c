@@ -234,6 +234,13 @@ int eMovie_getGenero(eMovie* movie,char* genero)
                     FILTRADORAS
 *****************************************************/
 
+
+/** \brief Funcion para filtrar por genero comedia.
+ *
+ * \param a void*
+ * \return int Devuelve 1 si la pelicula es de genero comedia, 0 si no.
+ *
+ */
 int eMovie_filterByGeneroComedia(void* a)
 {
     int condicion = 0;
@@ -256,6 +263,12 @@ int eMovie_filterByGeneroComedia(void* a)
     return condicion;
 }
 
+/** \brief Funcion para filtrar por genero drama.
+ *
+ * \param a void*
+ * \return int Devuelve 1 si la pelicula es de genero drama, 0 si no.
+ *
+ */
 int eMovie_filterByGeneroDrama(void* a)
 {
     int condicion = 0;
@@ -278,6 +291,12 @@ int eMovie_filterByGeneroDrama(void* a)
     return condicion;
 }
 
+/** \brief Funcion para filtrar por genero accion.
+ *
+ * \param a void*
+ * \return int Devuelve 1 si la pelicula es de genero accion, 0 si no.
+ *
+ */
 int eMovie_filterByGeneroAccion(void* a)
 {
     int condicion = 0;
@@ -300,6 +319,13 @@ int eMovie_filterByGeneroAccion(void* a)
     return condicion;
 }
 
+
+/** \brief Funcion para filtrar por genero terror.
+ *
+ * \param a void*
+ * \return int Devuelve 1 si la pelicula es de genero terror, 0 si no.
+ *
+ */
 int eMovie_filterByGeneroTerror(void* a)
 {
     int condicion = 0;
@@ -328,6 +354,13 @@ int eMovie_filterByGeneroTerror(void* a)
                     MAPEADORAS
 *****************************************************/
 
+
+/** \brief Asigna al elemento un rating aleatorio entre 1 y 10 (decimal)
+ *
+ * \param pElement void*
+ * \return void* Elemento mapeado
+ *
+ */
 void* eMovie_mapRating(void* pElement)
 {
     void* pRetorno = NULL;
@@ -350,6 +383,12 @@ void* eMovie_mapRating(void* pElement)
     return pRetorno;
 }
 
+/** \brief Asigna al elemento un genero aleatorio
+ *
+ * \param pElement void*
+ * \return void* Elemento mapeado
+ *
+ */
 void* eMovie_mapGenero(void* pElement)
 {
     void* pRetorno = NULL;
@@ -384,6 +423,13 @@ void* eMovie_mapGenero(void* pElement)
                     COMPARADORAS
 *****************************************************/
 
+/** \brief Compara los elementos eMovie por genero y, si son del mismo genero, por rating
+ *
+ * \param a void*
+ * \param b void*
+ * \return int Devuelve 0 si a==b, 1 si a>b, -1 si b<a
+ *
+ */
 int eMovie_compareByGeneroYRating(void* a, void* b)
 {
 	int comparison = 0;
@@ -404,7 +450,6 @@ int eMovie_compareByGeneroYRating(void* a, void* b)
 		// cargo rating
 		eMovie_getRating(first, &rating1);
 		eMovie_getRating(second, &rating2);
-		//printf("gen1:%s    gen2:%s    dur1:%d    dur2:%d\n", genero1, genero2, rating1, rating2);
 		// comparacion de strings
 		comparison = strcmp(genero1, genero2);
 		if(comparison > 0)

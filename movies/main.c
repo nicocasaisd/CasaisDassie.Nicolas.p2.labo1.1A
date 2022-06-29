@@ -100,10 +100,8 @@ int main()
                     salirMenuFiltro = 's';
                     break;
                 }
-
             }
             while(salirMenuFiltro != 's');
-
 
             break;
         case 6:

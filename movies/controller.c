@@ -126,19 +126,28 @@ int controller_printElement(eMovie* auxeMovie)
 int controller_saveAsText(char* path , LinkedList* pList)
 {
 	int exit_status = 0;
+	int len;
 	eMovie* pAux = NULL;
-	FILE* pFile = fopen(path, "w");
+	int id_peli;
+	char titulo[32], genero[32];
+	float rating;
 
+	FILE* pFile = fopen(path, "w");
 
 	if(pFile != NULL)
 	{
 	    printf("Escrbiendo en archivo de texto ...\n");
 		//escribimos el encabezado
 		fprintf(pFile, "id_peli,titulo,genero,rating\n");
-		for(int i=0; i<ll_len(pList); i++)
+		len = ll_len(pList);
+		for(int i=0; i<len; i++)
 		{
 			pAux = ll_get(pList, i);
-			fprintf(pFile, "%d,%s,%s,%.1f\n", pAux->id_peli, pAux->titulo, pAux->genero, pAux->rating);
+			eMovie_getId(pAux, &id_peli);
+			eMovie_getTitulo(pAux, titulo);
+			eMovie_getGenero(pAux, genero);
+			eMovie_getRating(pAux, &rating);
+			fprintf(pFile, "%d,%s,%s,%.1f\n", id_peli, titulo, genero, rating);
 
 		}
 		fclose(pFile);
@@ -169,6 +178,12 @@ int controller_saveAsText_userInput(LinkedList* pList)
     return exit_status;
 }
 
+/** \brief Mapea los valores de rating a una lista auxiliar, limpia la lista original y cambia el puntero a la lista mapeada
+ *
+ * \param pList LinkedList*
+ * \return int Devuelve 1 si EXITO, 0 si ocurrio un error.
+ *
+ */
 int controller_mapRandomRating(LinkedList* pList)
 {
     int exit_status = 0;
@@ -182,11 +197,19 @@ int controller_mapRandomRating(LinkedList* pList)
         ll_clear(pList);
         // pList apunta a la nueva LinkedList
         *pList = *listaMapRating;
+
+        exit_status = 1;
     }
 
     return exit_status;
 }
 
+/** \brief Mapea los valores de genero a una lista auxiliar, limpia la lista original y cambia el puntero a la lista mapeada
+ *
+ * \param pList LinkedList*
+ * \return int Devuelve 1 si EXITO, 0 si ocurrio un error.
+ *
+ */
 int controller_mapRandomGenero(LinkedList* pList)
 {
     int exit_status = 0;
@@ -200,6 +223,8 @@ int controller_mapRandomGenero(LinkedList* pList)
         ll_clear(pList);
         // pList apunta a la nueva LinkedList
         *pList = *listaMapGenero;
+
+        exit_status = 1;
     }
 
     return exit_status;

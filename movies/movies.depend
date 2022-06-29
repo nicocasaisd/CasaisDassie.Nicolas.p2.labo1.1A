@@ -86,7 +86,7 @@
 
 1656423985 /home/nicocasaisd/Documentos/UTN/Programacion1/Parciales/PREVIO Parcial 2/movies/aleatorio.h
 
-1656511313 source:/home/nicocasaisd/Documentos/UTN/Programacion1/Parciales/PREVIO Parcial 2/movies/controller.c
+1656512569 source:/home/nicocasaisd/Documentos/UTN/Programacion1/Parciales/PREVIO Parcial 2/movies/controller.c
 	<stdio.h>
 	<stdlib.h>
 	"LinkedList.h"
@@ -108,7 +108,7 @@
 
 1656508096 /home/nicocasaisd/Documentos/UTN/Programacion1/Parciales/PREVIO Parcial 2/movies/controller.h
 
-1656509749 source:/home/nicocasaisd/Documentos/UTN/Programacion1/Parciales/PREVIO Parcial 2/movies/eMovie.c
+1656511967 source:/home/nicocasaisd/Documentos/UTN/Programacion1/Parciales/PREVIO Parcial 2/movies/eMovie.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
@@ -145,7 +145,7 @@
 	<stdlib.h>
 	"utn.h"
 
-1656510985 source:/home/nicocasaisd/Documentos/UTN/Programacion1/Parciales/PREVIO Parcial 2/movies/main.c
+1656511602 source:/home/nicocasaisd/Documentos/UTN/Programacion1/Parciales/PREVIO Parcial 2/movies/main.c
 	<stdio.h>
 	<stdlib.h>
 	<time.h>
